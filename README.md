@@ -1,1 +1,1 @@
-Click Green Code button and select download as a zip
+Click Green Code button and select download zip
