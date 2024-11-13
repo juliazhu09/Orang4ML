@@ -1,0 +1,425 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <title>Orange Report</title>
+
+    <style>
+    html, body, table {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        margin:0px;
+        padding:0;
+        border:0 none;
+    }
+
+    h1, h2 , h3, h4, h5 {
+       padding: 1px;
+       font-size:100%;
+    }
+
+    h1 {
+        color: white;
+        background-color: black;
+        padding: 4px;
+        margin-top: 12px;
+        margin-bottom: 6px;
+    }
+
+    h2 {
+        border-bottom: 1px solid black;
+        padding-left: 2px;
+    }
+
+    ul, table, p {
+        padding: 10px;
+    }
+
+    table {
+        margin-left: -6px;
+    }
+
+    span.timestamp {
+        position: absolute;
+        right: 40px;
+        color:#ddd;
+    }
+
+    div.selected, div.normal {
+        margin: 5px;
+    }
+
+    div.selected {
+        background: #ddd;
+    }
+    @media print{
+        div.selected {
+            background: inherit;
+        }
+        ::-webkit-input-placeholder {
+            color: transparent;
+        }
+    }
+
+    div.content {
+        margin-left: 15px;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 2px 6px 2px 6px;
+    }
+
+    th {
+        font-weight: bold;
+    }
+
+    @media screen {
+        td, th {
+            white-space: nowrap;
+        }
+    }
+
+    .caption {
+        text-align: center;
+        font-size: 90%;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        max-height: 20cm;
+    }
+
+    span.legend-square {
+        width: 1em;
+        height: 1em;
+        margin-right: 6px;
+        display: inline-block;
+    }
+
+    span.legend-item {
+        margin-right: 24px;
+    }
+
+    textarea {
+        border: 1px solid silver;
+        font-style: italic;
+        width: 100%;
+        height: 4em;
+    }
+
+    .textwrapper {
+        padding: 15px;
+    }
+
+    div.normal textarea:invalid {
+        display: none;
+    }
+
+    div.selected textarea {
+        display: block;
+    }
+
+    @media print{
+        section.section, img {
+            page-break-inside: avoid;
+        }
+    }
+    </style>
+    <script>
+    function scrollToId(id) {
+        var sel_el = document.getElementById(id);
+        if (sel_el != undefined) {
+            sel_el.scrollIntoView();
+            return true;
+        }
+        return false;
+    };
+
+    function setSelectedId(id) {
+        var sel_el = document.getElementsByClassName('selected')[0];
+        if (sel_el != undefined && sel_el.id != id) {
+           sel_el.className = 'normal';
+        }
+        sel_el = document.getElementById(id);
+        if (sel_el != undefined) {
+            sel_el.className = 'selected';
+            return true;
+        }
+        return false;
+    };
+    </script>
+
+</head><body onload="(function (id) {     setSelectedId(id); scrollToId(id); }(&quot;1739898400784&quot;));">
+
+ 
+
+<div id="1739897921760" class="normal" onclick="pybridge._select_item(this.id)"><section class="section"><h1>Linear Regression <span class="timestamp">Fri Nov 08 24, 15:50:14</span></h1><div class="content">
+<ul><b>Name:</b> Linear Regression<br></ul><h2>Model parameters</h2><ul><b>Regularization:</b> No Regularization<br><b>Fit intercept:</b> Yes<br></ul><h2>Data</h2><ul><b>Data instances:</b> 569<br><b>Features:</b> radius_mean, texture_mean, perimeter_mean, area_mean, smoothness_mean, compactness_mean, concavity_mean, concave points_mean, symmetry_mean, fractal_dimension_mean, radius_se, texture_se, perimeter_se, area_se, smoothness_se, compactness_se, concavity_se, concave points_se, symmetry_se, fractal_dimension_se, radius_worst, texture_worst, perimeter_worst, smoothness_worst, compactness_worst, concavity_worst, concave points_worst, symmetry_worst, fractal_dimension_worst (total: 29 features)<br><b>Meta attributes:</b> id, diagnosis<br><b>Target:</b> area_worst<br></ul></div></section>
+
+<div class="textwrapper"><textarea placeholder="Write a comment..." oninput="this.innerHTML = this.value;pybridge._add_comment(this.parentNode.parentNode.id, this.value);"></textarea></div></div><div id="1739898400064" class="normal" onclick="pybridge._select_item(this.id)"><section class="section"><h1>Test and Score <span class="timestamp">Fri Nov 08 24, 15:51:02</span></h1><div class="content">
+<h2>Settings</h2><ul><b>Sampling type:</b> Stratified 5-fold Cross validation<br></ul><h2>Scores</h2><table>
+<tbody><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">Model</th>
+<th style="color:black; background:transparent; text-align:left; vertical-align:middle;">MSE</th>
+<th style="color:black; background:transparent; text-align:left; vertical-align:middle;">RMSE</th>
+<th style="color:black; background:transparent; text-align:left; vertical-align:middle;">MAE</th>
+<th style="color:black; background:transparent; text-align:left; vertical-align:middle;">MAPE</th>
+<th style="color:black; background:transparent; text-align:left; vertical-align:middle;">R2</th>
+</tr><tr><td style="color:black; background:transparent; text-align:left; vertical-align:middle;">Linear Regression</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">2404.098</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">49.032</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">22.787</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">0.029</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">0.993</td>
+</tr></tbody></table></div></section>
+
+<div class="textwrapper"><textarea placeholder="Write a comment..." oninput="this.innerHTML = this.value;pybridge._add_comment(this.parentNode.parentNode.id, this.value);"></textarea></div></div><div id="1739898399920" class="normal" onclick="pybridge._select_item(this.id)"><section class="section"><h1>Data Table <span class="timestamp">Fri Nov 08 24, 15:51:07</span></h1><div class="content">
+<ul><b>Data instances:</b> 30<br><b>Features:</b> 1<br><b>Meta attributes:</b> 1<br></ul><table>
+<tbody><tr><th></th><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">name</th>
+<th style="color:black; background:transparent; text-align:left; vertical-align:middle;">coef</th>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">1</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">intercept</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">101.152</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">2</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">radius_mean</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">-169.151</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">3</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">texture_mean</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">2.29032</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">4</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">perimeter_mean</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">-1.5247</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">5</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">area_mean</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">1.32686</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">6</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">smoothness_mean</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">136.375</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">7</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">compactness_mean</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">71.0986</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">8</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">concavity_mean</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">-177.525</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">9</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">concave points_mean</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">321.443</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">10</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">symmetry_mean</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">327.482</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">11</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">fractal_dimension_mean</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">1290.17</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">12</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">radius_se</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">-253.727</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">13</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">texture_se</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">19.7206</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">14</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">perimeter_se</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">-36.4297</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">15</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">area_se</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">2.59116</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">16</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">smoothness_se</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">-582.232</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">17</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">compactness_se</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">42.69</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">18</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">concavity_se</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">-372.376</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">19</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">concave points_se</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">4800.67</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">20</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">symmetry_se</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">881.33</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">21</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">fractal_dimension_se</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">356.45</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">22</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">radius_worst</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">128.211</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">23</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">texture_worst</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">-2.72432</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">24</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">perimeter_worst</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">4.22439</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">25</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">smoothness_worst</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">-309.12</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">26</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">compactness_worst</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">-12.6817</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">27</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">concavity_worst</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">73.764</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">28</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">concave points_worst</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">-618.323</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">29</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">symmetry_worst</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">-260.723</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">30</th>
+<td style="color:#000000; background:#dcdcc8; text-align:left; vertical-align:middle;">fractal_dimension_worst</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">-544.267</td>
+</tr></tbody></table></div></section>
+
+<div class="textwrapper"><textarea placeholder="Write a comment..." oninput="this.innerHTML = this.value;pybridge._add_comment(this.parentNode.parentNode.id, this.value);"></textarea></div></div><div id="1739898400784" class="selected" onclick="pybridge._select_item(this.id)"><section class="section"><h1>Correlations <span class="timestamp">Fri Nov 08 24, 15:52:49</span></h1><div class="content">
+<h2>Spearman correlation</h2><table>
+<tbody><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">1</th>
+<td style="color:#ffffff; background:#0078d7; text-align:left; vertical-align:middle;">+0.999</td>
+<td style="color:#ffffff; background:#0078d7; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:#ffffff; background:#0078d7; text-align:center; vertical-align:middle;">:</td>
+<td style="color:#ffffff; background:#0078d7; text-align:left; vertical-align:middle;">radius_worst</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">2</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.992</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">perimeter_worst</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">3</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.981</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">perimeter_mean</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">4</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.980</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_mean</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">area_worst</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">5</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.979</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">radius_mean</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">6</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.780</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">concave points_mean</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">7</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.776</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_se</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">area_worst</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">8</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.774</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">concave points_worst</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">9</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.677</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">concavity_mean</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">10</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.651</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">concavity_worst</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">11</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.605</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">perimeter_se</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">12</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.596</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">radius_se</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">13</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.550</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">compactness_worst</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">14</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.532</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">compactness_mean</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">15</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.404</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">concave points_se</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">16</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.378</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">concavity_se</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">17</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.372</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">texture_worst</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">18</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.368</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">texture_mean</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">19</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">-0.324</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">smoothness_se</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">20</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">-0.305</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">fractal_dimension_mean</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">21</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.279</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">compactness_se</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">22</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">-0.267</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">symmetry_se</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">23</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.248</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">symmetry_worst</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">24</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.210</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">smoothness_worst</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">25</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.192</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">smoothness_mean</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">26</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.154</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">symmetry_mean</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">27</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">-0.148</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">texture_se</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">28</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.119</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">fractal_dimension_worst</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">29</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.023</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">id</td>
+</tr><tr><th style="color:black; background:transparent; text-align:left; vertical-align:middle;">30</th>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">+0.007</td>
+<td style="color:black; background:transparent; text-align:right; vertical-align:middle;">area_worst</td>
+<td style="color:black; background:transparent; text-align:center; vertical-align:middle;">:</td>
+<td style="color:black; background:transparent; text-align:left; vertical-align:middle;">fractal_dimension_se</td>
+</tr></tbody></table></div></section>
+
+<div class="textwrapper"><textarea placeholder="Write a comment..." oninput="this.innerHTML = this.value;pybridge._add_comment(this.parentNode.parentNode.id, this.value);"></textarea></div></div></body></html>

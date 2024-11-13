@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="File" qualified_name="Orange.widgets.data.owfile.OWFile" project_name="Orange3" version="" title="Breast Cancer data" position="(135.0, 157.0)" />
+		<node id="1" name="Python Script" qualified_name="Orange.widgets.data.owpythonscript.OWPythonScript" project_name="Orange3" version="" title="Python Script" position="(384.0, 140.0)" />
+		<node id="2" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(565.0, 140.0)" />
+		<node id="3" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table (1)" position="(396.0, 248.0)" />
+		<node id="4" name="Python Script" qualified_name="Orange.widgets.data.owpythonscript.OWPythonScript" project_name="Orange3" version="" title="Grid Search using DesicionTree" position="(401.0, 405.0)" />
+		<node id="5" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table (2)" position="(599.0, 402.0)" />
+		<node id="6" name="Python Script" qualified_name="Orange.widgets.data.owpythonscript.OWPythonScript" project_name="Orange3" version="" title="Grid Search for Xgboost" position="(405.0, 532.0)" />
+		<node id="7" name="Gradient Boosting" qualified_name="Orange.widgets.model.owgradientboosting.OWGradientBoosting" project_name="Orange3" version="" title="Gradient Boosting" position="(410.0, 641.0)" />
+		<node id="8" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table (3)" position="(604.0, 531.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="2" source_node_id="0" sink_node_id="3" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="3" source_node_id="0" sink_node_id="4" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="4" source_node_id="4" sink_node_id="5" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="5" source_node_id="0" sink_node_id="6" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+		<link id="6" source_node_id="6" sink_node_id="8" source_channel="Data" sink_channel="Data" enabled="true" source_channel_id="data" sink_channel_id="data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="pickle">gASV6hQAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjAxyZWNlbnRfcGF0aHOUXZQojB5v
+cmFuZ2V3aWRnZXQudXRpbHMuZmlsZWRpYWxvZ3OUjApSZWNlbnRQYXRolJOUKYGUfZQojAdhYnNw
+YXRolIxFRzovTXkgRHJpdmUvT0lUIHJlbGF0ZWQvV29ya3Nob3AvT3JhbmdlIDRNTC9icmVhc3Qg
+Y2FuY2VyIGRhdGFzZXQuY3N2lIwGcHJlZml4lIwHYmFzZWRpcpSMB3JlbHBhdGiUjBlicmVhc3Qg
+Y2FuY2VyIGRhdGFzZXQuY3N2lIwFdGl0bGWUjACUjAVzaGVldJRoEIwLZmlsZV9mb3JtYXSUTnVi
+aAYpgZR9lChoCYxXQzovVXNlcnMveHpodTgvQXBwRGF0YS9Mb2NhbC9Qcm9ncmFtcy9PcmFuZ2Uv
+TGliL3NpdGUtcGFja2FnZXMvT3JhbmdlL2RhdGFzZXRzL2lyaXMudGFilGgLjA9zYW1wbGUtZGF0
+YXNldHOUaA2MCGlyaXMudGFilGgPaBBoEWgQaBJOdWJoBimBlH2UKGgJjEZHOi9NeSBEcml2ZS9P
+SVQgcmVsYXRlZC9Xb3Jrc2hvcC9PcmFuZ2UgNE1ML2ZydWl0X2RhdGFfd2l0aF9jb2xvcnMuY3N2
+lGgLaAxoDYwaZnJ1aXRfZGF0YV93aXRoX2NvbG9ycy5jc3aUaA9oEGgRaBBoEk51YmgGKYGUfZQo
+aAmMPEc6L015IERyaXZlL09JVCByZWxhdGVkL1dvcmtzaG9wL09yYW5nZSA0TUwvQnJlYXN0Q2Fu
+Y2VyLmNzdpRoC2gMaA2MEEJyZWFzdENhbmNlci5jc3aUaA9oEGgRaBBoEk51YmgGKYGUfZQoaAmM
+WkM6L1VzZXJzL3h6aHU4L0FwcERhdGEvTG9jYWwvUHJvZ3JhbXMvT3JhbmdlL0xpYi9zaXRlLXBh
+Y2thZ2VzL09yYW5nZS9kYXRhc2V0cy90aXRhbmljLnRhYpRoC2gWaA2MC3RpdGFuaWMudGFilGgP
+aBBoEWgQaBJOdWJoBimBlH2UKGgJjFpDOi9Vc2Vycy94emh1OC9BcHBEYXRhL0xvY2FsL1Byb2dy
+YW1zL09yYW5nZS9MaWIvc2l0ZS1wYWNrYWdlcy9PcmFuZ2UvZGF0YXNldHMvaG91c2luZy50YWKU
+aAtoFmgNjAtob3VzaW5nLnRhYpRoD2gQaBFoEGgSTnViaAYpgZR9lChoCYxgQzovVXNlcnMveHpo
+dTgvQXBwRGF0YS9Mb2NhbC9Qcm9ncmFtcy9PcmFuZ2UvTGliL3NpdGUtcGFja2FnZXMvT3Jhbmdl
+L2RhdGFzZXRzL2hlYXJ0X2Rpc2Vhc2UudGFilGgLaBZoDYwRaGVhcnRfZGlzZWFzZS50YWKUaA9o
+EGgRaBBoEk51YmgGKYGUfZQoaAmMYUM6L1VzZXJzL3h6aHU4L0FwcERhdGEvTG9jYWwvUHJvZ3Jh
+bXMvT3JhbmdlL0xpYi9zaXRlLXBhY2thZ2VzL09yYW5nZS9kYXRhc2V0cy9icm93bi1zZWxlY3Rl
+ZC50YWKUaAtoFmgNjBJicm93bi1zZWxlY3RlZC50YWKUaA9oEGgRaBBoEk51YmgGKYGUfZQoaAmM
+VkM6L1VzZXJzL3h6aHU4L0FwcERhdGEvTG9jYWwvUHJvZ3JhbXMvT3JhbmdlL0xpYi9zaXRlLXBh
+Y2thZ2VzL09yYW5nZS9kYXRhc2V0cy96b28udGFilGgLaBZoDYwHem9vLnRhYpRoD2gQaBFoEGgS
+TnViZYwLcmVjZW50X3VybHOUXZSME3NhdmVkV2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAACh8A
+AAFLAAALaQAAA2EAAAogAAABZAAAC2gAAANgAAAAAQAAAAAHgAAACiAAAAFkAAALaAAAA2CUjAtz
+aGVldF9uYW1lc5R9lIwGc291cmNllEsAjAN1cmyUaBCMDWRvbWFpbl9lZGl0b3KUfZSMC19fdmVy
+c2lvbl9flEsBjBBjb250ZXh0X3NldHRpbmdzlF2UKIwVb3Jhbmdld2lkZ2V0LnNldHRpbmdzlIwH
+Q29udGV4dJSTlCmBlH2UKIwGdmFsdWVzlH2UKIwJdmFyaWFibGVzlF2UaDx9lGhIXZQoXZQojAJp
+ZJSMFE9yYW5nZS5kYXRhLnZhcmlhYmxllIwSQ29udGludW91c1ZhcmlhYmxllJOUSwJoEIhlXZQo
+jAlkaWFnbm9zaXOUaE6MEERpc2NyZXRlVmFyaWFibGWUk5RLAYwEQiwgTZSJZV2UKIwLcmFkaXVz
+X21lYW6UaFBLAGgQiGVdlCiMDHRleHR1cmVfbWVhbpRoUEsAaBCIZV2UKIwOcGVyaW1ldGVyX21l
+YW6UaFBLAGgQiGVdlCiMCWFyZWFfbWVhbpRoUEsAaBCIZV2UKIwPc21vb3RobmVzc19tZWFulGhQ
+SwBoEIhlXZQojBBjb21wYWN0bmVzc19tZWFulGhQSwBoEIhlXZQojA5jb25jYXZpdHlfbWVhbpRo
+UEsAaBCIZV2UKIwTY29uY2F2ZSBwb2ludHNfbWVhbpRoUEsAaBCIZV2UKIwNc3ltbWV0cnlfbWVh
+bpRoUEsAaBCIZV2UKIwWZnJhY3RhbF9kaW1lbnNpb25fbWVhbpRoUEsAaBCIZV2UKIwJcmFkaXVz
+X3NllGhQSwBoEIhlXZQojAp0ZXh0dXJlX3NllGhQSwBoEIhlXZQojAxwZXJpbWV0ZXJfc2WUaFBL
+AGgQiGVdlCiMB2FyZWFfc2WUaFBLAGgQiGVdlCiMDXNtb290aG5lc3Nfc2WUaFBLAGgQiGVdlCiM
+DmNvbXBhY3RuZXNzX3NllGhQSwBoEIhlXZQojAxjb25jYXZpdHlfc2WUaFBLAGgQiGVdlCiMEWNv
+bmNhdmUgcG9pbnRzX3NllGhQSwBoEIhlXZQojAtzeW1tZXRyeV9zZZRoUEsAaBCIZV2UKIwUZnJh
+Y3RhbF9kaW1lbnNpb25fc2WUaFBLAGgQiGVdlCiMDHJhZGl1c193b3JzdJRoUEsAaBCIZV2UKIwN
+dGV4dHVyZV93b3JzdJRoUEsAaBCIZV2UKIwPcGVyaW1ldGVyX3dvcnN0lGhQSwBoEIhlXZQojAph
+cmVhX3dvcnN0lGhQSwBoEIhlXZQojBBzbW9vdGhuZXNzX3dvcnN0lGhQSwBoEIhlXZQojBFjb21w
+YWN0bmVzc193b3JzdJRoUEsAaBCIZV2UKIwPY29uY2F2aXR5X3dvcnN0lGhQSwBoEIhlXZQojBRj
+b25jYXZlIHBvaW50c193b3JzdJRoUEsAaBCIZV2UKIwOc3ltbWV0cnlfd29yc3SUaFBLAGgQiGVd
+lCiMF2ZyYWN0YWxfZGltZW5zaW9uX3dvcnN0lGhQSwBoEIhlZXNoPksBdYwKYXR0cmlidXRlc5Qo
+jAJpZJRLAoaUjAlkaWFnbm9zaXOUXZQojAFClIwBTZRlhpSMC3JhZGl1c19tZWFulEsChpSMDHRl
+eHR1cmVfbWVhbpRLAoaUjA5wZXJpbWV0ZXJfbWVhbpRLAoaUjAlhcmVhX21lYW6USwKGlIwPc21v
+b3RobmVzc19tZWFulEsChpSMEGNvbXBhY3RuZXNzX21lYW6USwKGlIwOY29uY2F2aXR5X21lYW6U
+SwKGlIwTY29uY2F2ZSBwb2ludHNfbWVhbpRLAoaUjA1zeW1tZXRyeV9tZWFulEsChpSMFmZyYWN0
+YWxfZGltZW5zaW9uX21lYW6USwKGlIwJcmFkaXVzX3NllEsChpSMCnRleHR1cmVfc2WUSwKGlIwM
+cGVyaW1ldGVyX3NllEsChpSMB2FyZWFfc2WUSwKGlIwNc21vb3RobmVzc19zZZRLAoaUjA5jb21w
+YWN0bmVzc19zZZRLAoaUjAxjb25jYXZpdHlfc2WUSwKGlIwRY29uY2F2ZSBwb2ludHNfc2WUSwKG
+lIwLc3ltbWV0cnlfc2WUSwKGlIwUZnJhY3RhbF9kaW1lbnNpb25fc2WUSwKGlIwMcmFkaXVzX3dv
+cnN0lEsChpSMDXRleHR1cmVfd29yc3SUSwKGlIwPcGVyaW1ldGVyX3dvcnN0lEsChpSMCmFyZWFf
+d29yc3SUSwKGlIwQc21vb3RobmVzc193b3JzdJRLAoaUjBFjb21wYWN0bmVzc193b3JzdJRLAoaU
+jA9jb25jYXZpdHlfd29yc3SUSwKGlIwUY29uY2F2ZSBwb2ludHNfd29yc3SUSwKGlIwOc3ltbWV0
+cnlfd29yc3SUSwKGlIwXZnJhY3RhbF9kaW1lbnNpb25fd29yc3SUSwKGlHSUjAVtZXRhc5QpjApj
+bGFzc192YXJzlCmMEm1vZGlmaWVkX3ZhcmlhYmxlc5RdlHViaEMpgZR9lChoRn2UKIwJdmFyaWFi
+bGVzlF2UjA1kb21haW5fZWRpdG9ylH2UaN5dlChdlCiMAmlklGhQSwJoEIhlXZQojAlkaWFnbm9z
+aXOUaFRLAYwEQiwgTZSJZV2UKIwLcmFkaXVzX21lYW6UaFBLAGgQiGVdlCiMDHRleHR1cmVfbWVh
+bpRoUEsAaBCIZV2UKIwOcGVyaW1ldGVyX21lYW6UaFBLAGgQiGVdlCiMCWFyZWFfbWVhbpRoUEsA
+aBCIZV2UKIwPc21vb3RobmVzc19tZWFulGhQSwBoEIhlXZQojBBjb21wYWN0bmVzc19tZWFulGhQ
+SwBoEIhlXZQojA5jb25jYXZpdHlfbWVhbpRoUEsAaBCIZV2UKIwTY29uY2F2ZSBwb2ludHNfbWVh
+bpRoUEsAaBCIZV2UKIwNc3ltbWV0cnlfbWVhbpRoUEsAaBCIZV2UKIwWZnJhY3RhbF9kaW1lbnNp
+b25fbWVhbpRoUEsAaBCIZV2UKIwJcmFkaXVzX3NllGhQSwBoEIhlXZQojAp0ZXh0dXJlX3NllGhQ
+SwBoEIhlXZQojAxwZXJpbWV0ZXJfc2WUaFBLAGgQiGVdlCiMB2FyZWFfc2WUaFBLAGgQiGVdlCiM
+DXNtb290aG5lc3Nfc2WUaFBLAGgQiGVdlCiMDmNvbXBhY3RuZXNzX3NllGhQSwBoEIhlXZQojAxj
+b25jYXZpdHlfc2WUaFBLAGgQiGVdlCiMEWNvbmNhdmUgcG9pbnRzX3NllGhQSwBoEIhlXZQojAtz
+eW1tZXRyeV9zZZRoUEsAaBCIZV2UKIwUZnJhY3RhbF9kaW1lbnNpb25fc2WUaFBLAGgQiGVdlCiM
+DHJhZGl1c193b3JzdJRoUEsAaBCIZV2UKIwNdGV4dHVyZV93b3JzdJRoUEsAaBCIZV2UKIwPcGVy
+aW1ldGVyX3dvcnN0lGhQSwBoEIhlXZQojAphcmVhX3dvcnN0lGhQSwBoEIhlXZQojBBzbW9vdGhu
+ZXNzX3dvcnN0lGhQSwBoEIhlXZQojBFjb21wYWN0bmVzc193b3JzdJRoUEsAaBCIZV2UKIwPY29u
+Y2F2aXR5X3dvcnN0lGhQSwBoEIhlXZQojBRjb25jYXZlIHBvaW50c193b3JzdJRoUEsAaBCIZV2U
+KIwOc3ltbWV0cnlfd29yc3SUaFBLAGgQiGVdlCiMF2ZyYWN0YWxfZGltZW5zaW9uX3dvcnN0lGhQ
+SwBoEIhlXZQojAlGZWF0dXJlIDGUaFBLAmgQiGVlc2g+SwF1aJIojAJpZJRLAoaUjAlkaWFnbm9z
+aXOUXZQoaJdomGWGlIwLcmFkaXVzX21lYW6USwKGlIwMdGV4dHVyZV9tZWFulEsChpSMDnBlcmlt
+ZXRlcl9tZWFulEsChpSMCWFyZWFfbWVhbpRLAoaUjA9zbW9vdGhuZXNzX21lYW6USwKGlIwQY29t
+cGFjdG5lc3NfbWVhbpRLAoaUjA5jb25jYXZpdHlfbWVhbpRLAoaUjBNjb25jYXZlIHBvaW50c19t
+ZWFulEsChpSMDXN5bW1ldHJ5X21lYW6USwKGlIwWZnJhY3RhbF9kaW1lbnNpb25fbWVhbpRLAoaU
+jAlyYWRpdXNfc2WUSwKGlIwKdGV4dHVyZV9zZZRLAoaUjAxwZXJpbWV0ZXJfc2WUSwKGlIwHYXJl
+YV9zZZRLAoaUjA1zbW9vdGhuZXNzX3NllEsChpSMDmNvbXBhY3RuZXNzX3NllEsChpSMDGNvbmNh
+dml0eV9zZZRLAoaUjBFjb25jYXZlIHBvaW50c19zZZRLAoaUjAtzeW1tZXRyeV9zZZRLAoaUjBRm
+cmFjdGFsX2RpbWVuc2lvbl9zZZRLAoaUjAxyYWRpdXNfd29yc3SUSwKGlIwNdGV4dHVyZV93b3Jz
+dJRLAoaUjA9wZXJpbWV0ZXJfd29yc3SUSwKGlIwKYXJlYV93b3JzdJRLAoaUjBBzbW9vdGhuZXNz
+X3dvcnN0lEsChpSMEWNvbXBhY3RuZXNzX3dvcnN0lEsChpSMD2NvbmNhdml0eV93b3JzdJRLAoaU
+jBRjb25jYXZlIHBvaW50c193b3JzdJRLAoaUjA5zeW1tZXRyeV93b3JzdJRLAoaUjBdmcmFjdGFs
+X2RpbWVuc2lvbl93b3JzdJRLAoaUjAlGZWF0dXJlIDGUSwKGlHSUaNcpaNgpaNldlHViaEMpgZR9
+lChoRn2UKGjeXZRo4H2UaN5dlChdlCiMDHNlcGFsIGxlbmd0aJRoUEsAaBCIZV2UKIwLc2VwYWwg
+d2lkdGiUaFBLAGgQiGVdlCiMDHBldGFsIGxlbmd0aJRoUEsAaBCIZV2UKIwLcGV0YWwgd2lkdGiU
+aFBLAGgQiGVdlCiMBGlyaXOUaFRLAYwsSXJpcy1zZXRvc2EsIElyaXMtdmVyc2ljb2xvciwgSXJp
+cy12aXJnaW5pY2GUiWVlc2g+SwF1aJIojAxzZXBhbCBsZW5ndGiUSwKGlIwLc2VwYWwgd2lkdGiU
+SwKGlIwMcGV0YWwgbGVuZ3RolEsChpSMC3BldGFsIHdpZHRolEsChpR0lGjXKWjYjARpcmlzlF2U
+KIwLSXJpcy1zZXRvc2GUjA9JcmlzLXZlcnNpY29sb3KUjA5JcmlzLXZpcmdpbmljYZRlhpSFlGjZ
+XZR1YmV1Lg==
+</properties>
+		<properties node_id="1" format="literal">{'controlAreaVisible': True, 'currentScriptIndex': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01o\x00\x00\x00~\x00\x00\x04\x90\x00\x00\x02\xf4\x00\x00\x01p\x00\x00\x00\x9c\x00\x00\x04\x8f\x00\x00\x02\xf3\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x01p\x00\x00\x00\x9c\x00\x00\x04\x8f\x00\x00\x02\xf3', 'scriptLibrary': [{'name': 'Table from numpy', 'script': 'import numpy as np\nfrom Orange.data import Table\nnew_X = np.log(in_data.X)\nout_data = able.(in_data.domain, new_X, in_data.Y, in_data.metas)', 'filename': None}, {'name': 'New script', 'script': 'import numpy as np\nfrom Orange.data import Table\nnew_X = np.log(in_data.X)\nout_data = Table(in_data.domain, new_X, in_data.Y, in_data.metas)', 'filename': None}], 'scriptText': 'import numpy as np\nfrom Orange.data import Table\nnew_X = np.log(in_data.X)\nout_data = Table(in_data.domain, new_X, in_data.Y, in_data.metas)', 'splitterState': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\xa1\x00\x00\x00]\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', 'vimModeEnabled': True, '__version__': 2}</properties>
+		<properties node_id="2" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x07\x7f\xff\xff\xff\xfe\x00\x00\x0f\x00\x00\x00\x04\x08\x00\x00\x07\x80\x00\x00\x00\x17\x00\x00\x0e\xff\x00\x00\x04\x07\x00\x00\x00\x01\x02\x00\x00\x00\x07\x80\x00\x00\x07\x80\x00\x00\x00\x17\x00\x00\x0e\xff\x00\x00\x04\x07', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="3" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x07\x7f\xff\xff\xff\xfe\x00\x00\x0f\x00\x00\x00\x04\x08\x00\x00\x07\x80\x00\x00\x00\x17\x00\x00\x0e\xff\x00\x00\x04\x07\x00\x00\x00\x01\x02\x00\x00\x00\x07\x80\x00\x00\x07\x80\x00\x00\x00\x17\x00\x00\x0e\xff\x00\x00\x04\x07', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [], '__version__': 1}</properties>
+		<properties node_id="4" format="literal">{'controlAreaVisible': True, 'currentScriptIndex': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01r\x00\x00\x00\x00\x00\x00\x05\xef\x00\x00\x02\xf7\x00\x00\x01s\x00\x00\x00\x1e\x00\x00\x05\xee\x00\x00\x02\xf6\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x01s\x00\x00\x00\x1e\x00\x00\x05\xee\x00\x00\x02\xf6', 'scriptLibrary': [{'name': 'Table from numpy', 'script': 'import Orange\nfrom sklearn.model_selection import GridSearchCV\nfrom sklearn.tree import DecisionTreeClassifier\nfrom sklearn.pipeline import Pipeline\nfrom sklearn import preprocessing\nimport pandas as pd\n\n\n#load the data and convert it into an Orange table\n\n\n#Create a scikit-learn pipeline with the desired preprocessor and estimator\npipeline = Pipeline([\n    (\'scaler\', preprocessing.StandardScaler()),  # Preprocessing (optional)\n    (\'classifier\', DecisionTreeClassifier())  # Your classifier (e.g., Decision Tree)\n])\n\n\n#define the hyperparameter search grid\n\nparam_grid = {\n    \'scaler\': [preprocessing.StandardScaler(), preprocessing.MinMaxScaler()],\n    \'classifier__criterion\': [\'gini\', \'entropy\'],\n    \'classifier__max_depth\': [3, 4, 5, 6, 7, 8, 9, 10]\n}\n\n#create the GridSearchCV object and fit it into data\ngrid_search = GridSearchCV(pipeline, param_grid, scoring=\'accuracy\', cv=5)\ngrid_search.fit(in_data.X, in_data.Y)\n\n#print the best hyperparameters and corresponding scores\nprint("Best hyperparameters:", grid_search.best_params_)\nprint("Best score:", grid_search.best_score_)\n\n#print(grid_search.cv_results_)\nresult = pd.DataFrame(grid_search.cv_results_)\n#print(result)\nresult=result.drop("params", axis=1)\nprint(result.head())\n#from Orange.data import Domain, DiscreteVariable, ContinuousVariable, StringVariable\nfrom Orange.data.pandas_compat import table_from_frame\n\nout_data = table_from_frame(result)\n\n\n\n\n\n', 'filename': None}], 'scriptText': 'import Orange\nfrom sklearn.model_selection import GridSearchCV\nfrom sklearn.tree import DecisionTreeClassifier\nfrom sklearn.pipeline import Pipeline\nfrom sklearn import preprocessing\nimport pandas as pd\n\n\n#load the data and convert it into an Orange table\n\n\n#Create a scikit-learn pipeline with the desired preprocessor and estimator\npipeline = Pipeline([\n    (\'scaler\', preprocessing.StandardScaler()),  # Preprocessing (optional)\n    (\'classifier\', DecisionTreeClassifier())  # Your classifier (e.g., Decision Tree)\n])\n\n\n#define the hyperparameter search grid\n\nparam_grid = {\n    \'scaler\': [preprocessing.StandardScaler(), preprocessing.MinMaxScaler()],\n    \'classifier__criterion\': [\'gini\', \'entropy\'],\n    \'classifier__max_depth\': [3, 4, 5, 6, 7, 8, 9, 10]\n}\n\n#create the GridSearchCV object and fit it into data\ngrid_search = GridSearchCV(pipeline, param_grid, scoring=\'accuracy\', cv=5)\ngrid_search.fit(in_data.X, in_data.Y)\n\n#print the best hyperparameters and corresponding scores\nprint("Best hyperparameters:", grid_search.best_params_)\nprint("Best score:", grid_search.best_score_)\n\n#print(grid_search.cv_results_)\nresult = pd.DataFrame(grid_search.cv_results_)\n#print(result)\nresult=result.drop("params", axis=1)\nprint(result.head())\n#from Orange.data import Domain, DiscreteVariable, ContinuousVariable, StringVariable\nfrom Orange.data.pandas_compat import table_from_frame\n\nout_data = table_from_frame(result)\n\n\n\n\n\n', 'splitterState': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x01\xca\x00\x00\x00\xe7\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', 'vimModeEnabled': False, '__version__': 2}</properties>
+		<properties node_id="5" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x07\xbe\x00\x00\x00[\x00\x00\r\xbd\x00\x00\x03\xeb\x00\x00\x07\xbf\x00\x00\x00t\x00\x00\r\xbc\x00\x00\x03\xea\x00\x00\x00\x01\x00\x00\x00\x00\x07\x80\x00\x00\x07\xbf\x00\x00\x00t\x00\x00\r\xbc\x00\x00\x03\xea', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [18], 'columns': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]}, 'stored_sort': [('param_classifier__max_depth', 1)], '__version__': 1}</properties>
+		<properties node_id="6" format="literal">{'controlAreaVisible': True, 'currentScriptIndex': 0, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x01]\x00\x00\x00[\x00\x00\x05\x80\x00\x00\x03\x89\x00\x00\x01^\x00\x00\x00y\x00\x00\x05\x7f\x00\x00\x03\x88\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x01^\x00\x00\x00y\x00\x00\x05\x7f\x00\x00\x03\x88', 'scriptLibrary': [{'name': 'Table from numpy', 'script': 'import xgboost as xgb\nfrom sklearn.model_selection import GridSearchCV\nimport pandas as pd\n\n# Define the hyperparameter grid\nparam_grid = {\n    \'n_estimators\': [100, 400, 800],\n    \'max_depth\': [3, 5, 7, 9],\n    \'learning_rate\': [0.3 ,0.2, 0.1, 0.01, 0.001],\n    \'min_child_weight\': [1, 10, 100]\n    #\'subsample\': [0.2, 0.3 0.5, 0.7, 1]\n}\n\n# Create the XGBoost model object\nxgb_model = xgb.XGBClassifier()\n\n# Create the GridSearchCV object\ngrid_search = GridSearchCV(xgb_model, param_grid, cv=5, scoring=\'accuracy\')\n\n# Fit the GridSearchCV object to the training data\ngrid_search.fit(in_data.X, in_data.Y)\n\n# Print the best set of hyperparameters and the corresponding score\nprint("Best set of hyperparameters: ", grid_search.best_params_)\nprint("Best score: ", grid_search.best_score_)\n\n\n# Save as dataframe\nresult = pd.DataFrame(grid_search.cv_results_)\n#drip params col\nresult=result.drop("params", axis=1)\n# print first 5 rows\n#print(result.head())\n# dataframe to Orange Table\nfrom Orange.data.pandas_compat import table_from_frame\n\nout_data = table_from_frame(result)\n\n\n\n\n', 'filename': None}], 'scriptText': 'import xgboost as xgb\nfrom sklearn.model_selection import GridSearchCV\nimport pandas as pd\n\n# Define the hyperparameter grid\nparam_grid = {\n    \'n_estimators\': [100, 400, 800],\n    \'max_depth\': [3, 5, 7, 9],\n    \'learning_rate\': [0.3 ,0.2, 0.1, 0.01, 0.001],\n    \'min_child_weight\': [1, 10, 100]\n    #\'subsample\': [0.2, 0.3 0.5, 0.7, 1]\n}\n\n# Create the XGBoost model object\nxgb_model = xgb.XGBClassifier()\n\n# Create the GridSearchCV object\ngrid_search = GridSearchCV(xgb_model, param_grid, cv=5, scoring=\'accuracy\')\n\n# Fit the GridSearchCV object to the training data\ngrid_search.fit(in_data.X, in_data.Y)\n\n# Print the best set of hyperparameters and the corresponding score\nprint("Best set of hyperparameters: ", grid_search.best_params_)\nprint("Best score: ", grid_search.best_score_)\n\n\n# Save as dataframe\nresult = pd.DataFrame(grid_search.cv_results_)\n#drip params col\nresult=result.drop("params", axis=1)\n# print first 5 rows\n#print(result.head())\n# dataframe to Orange Table\nfrom Orange.data.pandas_compat import table_from_frame\n\nout_data = table_from_frame(result)\n\n\n\n\n', 'splitterState': b'\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\xa1\x00\x00\x00]\x01\xff\xff\xff\xff\x01\x00\x00\x00\x02\x00', 'vimModeEnabled': False, '__version__': 2}</properties>
+		<properties node_id="7" format="literal">{'auto_apply': True, 'controlAreaVisible': True, 'learner_name': '', 'method_index': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xf9\x00\x00\x01X\x00\x00\x04\x01\x00\x00\x03`\x00\x00\x02\xfa\x00\x00\x01v\x00\x00\x04\x00\x00\x00\x03_\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x02\xfa\x00\x00\x01v\x00\x00\x04\x00\x00\x00\x03_', 'catgb_editor': {'colsample_bylevel': 1, 'lambda_index': 55, 'learning_rate': 0.3, 'max_depth': 6, 'n_estimators': 100, 'random_state': True}, 'gb_editor': {'learning_rate': 0.1, 'max_depth': 3, 'min_samples_split': 2, 'n_estimators': 100, 'random_state': True, 'subsample': 1}, 'xgb_editor': {'colsample_bylevel': 1, 'colsample_bynode': 1, 'colsample_bytree': 1, 'lambda_index': 53, 'learning_rate': 0.3, 'max_depth': 6, 'n_estimators': 100, 'random_state': True, 'subsample': 1}, 'xgbrf_editor': {'colsample_bylevel': 1, 'colsample_bynode': 1, 'colsample_bytree': 1, 'lambda_index': 53, 'learning_rate': 0.3, 'max_depth': 6, 'n_estimators': 100, 'random_state': True, 'subsample': 1}, '__version__': 1}</properties>
+		<properties node_id="8" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x07\x7f\xff\xff\xff\xfe\x00\x00\x0f\x00\x00\x00\x04\x08\x00\x00\x07\x80\x00\x00\x00\x17\x00\x00\x0e\xff\x00\x00\x04\x07\x00\x00\x00\x01\x02\x00\x00\x00\x07\x80\x00\x00\x07\x80\x00\x00\x00\x17\x00\x00\x0e\xff\x00\x00\x04\x07', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [], 'columns': []}, 'stored_sort': [('rank_test_score', 1)], '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
